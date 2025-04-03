@@ -1,0 +1,74 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.navbar-left .logo {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* 🔹 Dropdown Fix */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;  /* Ensures proper placement */
+    left: 0;
+    background-color: rgba(26, 28, 43, 0.95);  /* Semi-transparent dark background */
+    border-radius: 5px;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+    background-color: #1f2233;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+    display: block;
+}
+
+/* 🔹 Right Side College Logo */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.college-logo {
+    width: 50px;
+}
+
+.college-text {
+    font-size: 14px;
+    color: white;
+}

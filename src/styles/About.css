@@ -1,0 +1,93 @@
+.about-container {
+    background-color: #0c1a2b;
+    color: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2aa8ff;
+    margin-bottom: 30px;
+}
+
+/* Flexbox layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #2aa8ff;
+    text-align: left;
+}
+
+/* Animated h2 */
+.about-text h2 {
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(90deg, #2aa8ff, #18e6ff);
+    padding: 12px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.about-text,
+.about-image {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Initially move elements down */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible class added via JavaScript */
+.about-text.visible,
+.about-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
