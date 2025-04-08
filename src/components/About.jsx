@@ -5,12 +5,11 @@ import college1 from '../assets/1696838635slider-1.webp';
 
 const About = () => {
     return (
-        <div className="bg-transparent text-white py-20 -mt-36 px-6 md:px-32">
-            <h1 className="text-center text-5xl font-bold mb-12 text-blue-400">About Us</h1>
+        <div className="bg-transparent text-white py-20 -mt-40 px-6 md:px-32">
+            <h1 className="text-center text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-orange-400 to-yellow-400">About Us</h1>
 
-            {/* First Row */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-12">
-                {/* Left Text Box */}
+                
                 <motion.div
                     className="relative bg-gray-800 p-10 rounded-lg border-l-8 border-blue-400 shadow-xl max-w-2xl h-auto"
                     initial={{ opacity: 0, x: -70 }}
@@ -124,7 +123,7 @@ const About = () => {
 
             <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12">
             <motion.div
-                    className="relative bg-gray-800 p-10 rounded-lg border-l-8 border-blue-400 shadow-xl max-w-2xl h-auto"
+                    className="relative bg-gray-800 p-10 rounded-lg border-l-8 shadow-xl max-w-2xl h-auto"
                     initial={{ opacity: 0, x: 70 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}

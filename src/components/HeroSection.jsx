@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { useNavigate } from "react-router-dom";
+
 import "../styles/FlipCountdown.css";
 
 const HeroSection = () => {
-  const navigate = useNavigate();
+  
 
   const CountdownTimer = () => {
-    const eventDate = new Date("2025-04-12T10:00:00").getTime();
+    const eventDate = new Date("2025-04-17T10:00:00").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
 
     useEffect(() => {
@@ -49,13 +49,13 @@ const HeroSection = () => {
     );
   };
 
-  const handleEvent = () => navigate("/EventPage");
+ 
 
   return (
     <div className="relative w-full min-h-screen flex flex-col justify-center items-center text-center overflow-hidden">
       <video autoPlay loop muted className="video-background">
         <source
-          src="/circuit-board.3840x2160.mp4"
+          src="\path1.mp4"
           type="video/mp4"
         />
       </video>
@@ -79,9 +79,7 @@ const HeroSection = () => {
           Event Starts in:
         </h1>
         <CountdownTimer />
-        <button onClick={() => navigate("/eventpage")} className="register-btn glow-button mt-5">
-          Register Now
-        </button>
+      
       </div>
     </div>
   );

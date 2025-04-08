@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: transparent;
+    padding:  20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+
 }
 
 .navbar-left .logo {
@@ -28,13 +30,12 @@
     font-weight: bold;
 }
 
-/* 🔹 Dropdown Fix */
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 40px;  /* Ensures proper placement */
+    top: 40px;
     left: 0;
-    background-color: rgba(26, 28, 43, 0.95);  /* Semi-transparent dark background */
+    background-color: rgba(26, 28, 43, 0.95);
     border-radius: 5px;
     padding: 10px 0;
     list-style: none;
@@ -57,7 +58,6 @@
     display: block;
 }
 
-/* 🔹 Right Side College Logo */
 .navbar-right {
     display: flex;
     align-items: center;

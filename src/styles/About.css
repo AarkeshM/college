@@ -12,7 +12,7 @@
     margin-bottom: 30px;
 }
 
-/* Flexbox layout */
+
 .about-content {
     display: flex;
     align-items: center;
@@ -24,7 +24,6 @@
     text-align: left;
 }
 
-/* Animated h2 */
 .about-text h2 {
     font-size: 2rem;
     color: white;
@@ -39,18 +38,17 @@
 .about-image {
     opacity: 0;
     transform: translateY(50px);
-    /* Initially move elements down */
+   
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Visible class added via JavaScript */
 .about-text.visible,
 .about-image.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Animations */
+
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -75,7 +73,7 @@
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
     .about-content {
         flex-direction: column;

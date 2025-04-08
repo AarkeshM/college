@@ -1,11 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/Event.css"; // Ensure you have styles
+import "../styles/Event.css";
 
 const EventPage = () => {
   const navigate = useNavigate();
 
-  // Event details
   const events = [
     { id: 1, name: "Hackathon", description: "Code and compete!", link: "/hackathon" },
     { id: 2, name: "AI Challenge", description: "Show your AI skills!", link: "/ai-challenge" },
