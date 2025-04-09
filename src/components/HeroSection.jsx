@@ -59,9 +59,13 @@ const HeroSection = () => {
           type="video/mp4"
         />
       </video>
-
+      <div>
+        <h1 className="text-4xl font-serif  text-[#f72585]">
+          PARADOX 2K25
+        </h1>
+      </div>
       <div className="overlay"></div>
-      <div className="relative z-10 text-white px-5">
+      <div className="relative z-10 text-[#ffcbe6]  px-5">
         <TypeAnimation
           sequence={[
             "Welcome to Tech Event 2025",

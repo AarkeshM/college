@@ -1,11 +1,18 @@
 .navbar {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
-    padding:  20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f0f0f; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    margin-top: 10px;
+    z-index: 1001;
 }
 
 .navbar-left .logo {
@@ -17,6 +24,7 @@
     list-style: none;
     gap: 20px;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav-links li {
@@ -71,4 +79,50 @@
 .college-text {
     font-size: 14px;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row; /* Force row layout */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 15px;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #0f0f0f;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        padding: 10px 0;
+        margin-top: 10px;
+        z-index: 1001;
+        width: 160px;
+    }
+
+    .dropdown-menu li {
+        padding: 12px 20px;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .dropdown-menu li:hover {
+        background-color: #1a1a1a;
+    }
 }

@@ -6,10 +6,11 @@
 }
 
 .about-title {
+
     font-size: 3rem;
     font-weight: bold;
     color: #2aa8ff;
-    margin-bottom: 30px;
+   
 }
 
 
@@ -74,7 +75,12 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+    .about-title {
+       
+        font-size: 2.2rem; /* Responsive size */
+    }
+
     .about-content {
         flex-direction: column;
         text-align: center;
@@ -82,6 +88,7 @@
 
     .about-text,
     .about-image {
+        margin-top: 20px;
         width: 100%;
     }
 

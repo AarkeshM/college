@@ -5,7 +5,7 @@ const events = [
     title: "🔍 GLITCH.EXE (Debugging)",
     color: "border-lime-400",
     buttonColor: "bg-lime-400 hover:bg-lime-500",
-    link: "https://forms.gle/debugging-form-link",
+    link: "https://forms.gle/HLk8GxvgYE5rr8oe9",
     TimeLimit: "3 hours",
     details: [
       "The Debugging event challenges participants to identify and correct intentional errors in code snippets designed to simulate real-world programming bugs. This event emphasizes logical reasoning, problem-solving, and code optimization across languages like C, Java, and Python.",
@@ -18,8 +18,8 @@ const events = [
     title: "💻 HACKOVERDRIVE (Hackathon)",
     color: "border-cyan-400",
     buttonColor: "bg-blue-400 hover:bg-blue-500",
-    link: "https://forms.gle/hackathon-form-link",
-    TimeLimit: "3-4 hours",
+    link: "https://forms.gle/vVkubkAV3Wsg4aTg8",
+    TimeLimit: "5 hours",
     details: [
         "The GenAI Hackathon invites participants to build an AI-powered app, website, or tool using Generative AI models such as ChatGPT, DALL·E, or Whisper. The project must solve a real-world problem or enhance user experience with AI integration.",
         "Participants must choose a domain-specific topic like Health, Business, Studies, Sports, or Games & Entertainment, and create a solution that demonstrates practical use of Generative AI in that domain.",
@@ -32,7 +32,7 @@ const events = [
     description: "Explore the future of AI with practical tasks.",
     color: "border-pink-400",
     buttonColor: "bg-pink-400 hover:bg-pink-500",
-    link: "https://forms.gle/genai-form-link",
+    link: "https://forms.gle/kQ7oFGn7B6Qp3CVFA",
     TimeLimit: "3 hours",
     details: [
         "The GenAI Hackathon invites participants to build an AI-powered app, website, or tool using Generative AI models such as ChatGPT, DALL·E, or Whisper. The project must solve a real-world problem or enhance user experience with AI integration.",
