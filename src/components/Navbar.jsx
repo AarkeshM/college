@@ -30,11 +30,7 @@ const Navbar = () => {
             <Link to="/events" className="text-white dropdown-trigger hover:text-gray-300">
               Events
             </Link>
-          <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-            <li><a href="#coding">Debugging</a></li>
-            <li><a href="#hackathon">Hackathon</a></li>
-            <li><a href="#workshops">GenAI</a></li>
-          </ul>
+          
         </li>
       </ul>
 

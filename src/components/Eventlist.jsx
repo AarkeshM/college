@@ -45,8 +45,8 @@ const events = [
 
 const EventListPage = () => {
   return (
-    <section className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-slate-300 px-5 md:px-20 py-24">
-      <h2 className="text-5xl font-extrabold text-center mb-14 text-white animate-fade-in-down">
+    <section className="min-h-screen w-full bg-[#2d0051]  px-5 md:px-20 py-24">
+      <h2 className="text-5xl font-extrabold font-serif text-center mb-14 text-[#fff237] animate-fade-in-down">
         All Events
       </h2>
 
