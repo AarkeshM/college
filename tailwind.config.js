@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -21,6 +22,11 @@ module.exports = {
           'violet': '#7209b7',
           'indigo-glow': '#3f37c9',
           'deep-purple': '#560bad',
+        },
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+          orbitron: ['Orbitron', 'sans-serif'],
+          robotoMono: ['Roboto Mono', 'monospace'],
         },
       },
     },

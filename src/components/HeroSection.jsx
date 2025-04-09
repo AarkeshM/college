@@ -60,12 +60,12 @@ const HeroSection = () => {
         />
       </video>
       <div>
-        <h1 className="text-4xl font-serif  text-[#f72585]">
+        <h1 className="font-orbitron text-4xl text-[#f72585]">
           PARADOX 2K25
         </h1>
       </div>
       <div className="overlay"></div>
-      <div className="relative z-10 text-[#ffcbe6]  px-5">
+      <div className="relative z-10 text-pink-500 px-5">
         <TypeAnimation
           sequence={[
             "Welcome to Tech Event 2025",
@@ -76,7 +76,7 @@ const HeroSection = () => {
           wrapper="h1"
           speed={50}
           repeat={Infinity}
-          className="text-4xl md:text-5xl font-extrabold neon-glow"
+          className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
         />
 
         <h1 className="text-2xl md:text-3xl animate-fadeInUp neon-glow mt-5">

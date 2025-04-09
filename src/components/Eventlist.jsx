@@ -46,7 +46,7 @@ const events = [
 const EventListPage = () => {
   return (
     <section className="min-h-screen w-full bg-[#2d0051]  px-5 md:px-20 py-24">
-      <h2 className="text-5xl font-extrabold font-serif text-center mb-14 text-[#fff237] animate-fade-in-down">
+      <h2 className="text-5xl font-extrabold font-serif text-center mb-14  bg-gradient-to-r from-violet-700 via-rose-500 to-pink-600 bg-clip-text text-transparent animate-fadeInUp">
         All Events
       </h2>
 
@@ -62,7 +62,7 @@ const EventListPage = () => {
             )}
 
             {event.details.length > 0 && (
-              <ul className="list-disc list-inside font-serif text-base text-gray-200 space-y-2">
+              <ul className="list-disc list-inside font-serif text-base text-gray-200 space-y-2"  style={{ textAlign: "justify" }}>
                 {event.details.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
