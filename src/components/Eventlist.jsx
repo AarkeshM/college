@@ -19,12 +19,12 @@ const events = [
     color: "border-cyan-400",
     buttonColor: "bg-blue-400 hover:bg-blue-500",
     link: "https://forms.gle/vVkubkAV3Wsg4aTg8",
-    TimeLimit: "5 hours",
+    TimeLimit: "3 hours",
     details: [
-        "The GenAI Hackathon invites participants to build an AI-powered app, website, or tool using Generative AI models such as ChatGPT, DALL·E, or Whisper. The project must solve a real-world problem or enhance user experience with AI integration.",
-        "Participants must choose a domain-specific topic like Health, Business, Studies, Sports, or Games & Entertainment, and create a solution that demonstrates practical use of Generative AI in that domain.",
-        "The submission should include actual interactions or conversations with the AI, showcasing how prompts and outputs were effectively used in the development process.",
-        "Projects will be judged on creativity, technical execution, problem relevance, and innovation. Bonus points will be awarded for clean UI/UX, impactful solutions, and optimal AI usage."
+        "Form a team of 1 to 3 members. Use any programming language you're comfortable with.",
+        "There are 2 rounds – an easy round (1 hour) followed by a tougher round (2 hours), totaling 3 hours.",
+        "Ensure your code is functional and original. AI tools can be used within limits, but copying source code is strictly not allowed.",
+        "Your solution will be judged based on creativity, innovation, problem-solving approach, and how well the code works."
       ],
   },
   {
@@ -33,7 +33,7 @@ const events = [
     color: "border-pink-400",
     buttonColor: "bg-pink-400 hover:bg-pink-500",
     link: "https://forms.gle/kQ7oFGn7B6Qp3CVFA",
-    TimeLimit: "3 hours",
+    TimeLimit: "5 hours",
     details: [
         "The GenAI Hackathon invites participants to build an AI-powered app, website, or tool using Generative AI models such as ChatGPT, DALL·E, or Whisper. The project must solve a real-world problem or enhance user experience with AI integration.",
         "Participants must choose a domain-specific topic like Health, Business, Studies, Sports, or Games & Entertainment, and create a solution that demonstrates practical use of Generative AI in that domain.",
