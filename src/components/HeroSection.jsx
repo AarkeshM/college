@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion"
 
 import "../styles/FlipCountdown.css";
 
 const HeroSection = () => {
-  
+
 
   const CountdownTimer = () => {
-    const eventDate = new Date("2025-04-17T10:00:00").getTime();
+    const eventDate = new Date("2025-04-18T10:00:00").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
 
     useEffect(() => {
@@ -49,7 +50,7 @@ const HeroSection = () => {
     );
   };
 
- 
+
 
   return (
     <div className="relative w-full min-h-screen flex flex-col justify-center items-center text-center overflow-hidden">
@@ -83,7 +84,17 @@ const HeroSection = () => {
           Event Starts in:
         </h1>
         <CountdownTimer />
-      
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white px-8 py-6 rounded-2xl shadow-lg w-fit mx-auto text-center mt-20 animate-bounce font-bold border-2 border-white/20 backdrop-blur-sm"
+        >
+          <p className="text-xl mb-2 animate-pulse">🎉 Spot Registration Available ..!</p>
+          <p className="text-base">⏰ Timing: 8.30 A.M to 9.30 A.M</p>
+          <p className="text-base">🚀 1st come 1st serve</p>
+        </motion.div>
+
       </div>
     </div>
   );
